@@ -73,7 +73,7 @@ export default function EditJob() {
               </div>
               <div className="col-12">
                 <button type="submit" className="btn btn-primary">
-                  Add Job
+                  Edit Job
                 </button>
               </div>
             </form>

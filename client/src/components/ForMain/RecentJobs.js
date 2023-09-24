@@ -42,7 +42,7 @@ export default function Main() {
               type={job.jobtype}
               company={job.company}
               location={job.location}
-              noteId={job._id}
+              jobId={job._id}
             />
           ))}
         </div>

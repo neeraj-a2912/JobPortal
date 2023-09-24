@@ -7,7 +7,7 @@ export default function JobItem(props) {
       <div className="title-apply">
         <div className="title-type">
           <h4 className="my-0">
-            <Link to={`/job-details/${props.noteId}`} className="job-link">
+            <Link to={`/job-details/${props.jobId}`} className="job-link">
               {props.title}
             </Link>
           </h4>

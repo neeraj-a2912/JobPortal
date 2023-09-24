@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./ForHeader/Navbar";
 import Footer from "./ForFooter/Footer";
 import { useJobContext } from "../context/JobContext";
+import { Link } from "react-router-dom";
 
 export default function UserProfile() {
   const [name, setName] = useState();
@@ -82,7 +83,10 @@ export default function UserProfile() {
               {userJobs.map((job) => (
                 <li key={job._id} className="list-group-item">
                   {job.title}
-                  <button className="btn btn-primary btn-sm mx-2">Edit</button>
+                  {/* <button className="btn btn-primary btn-sm mx-2">Edit</button> */}
+                  <Link to={`/edit-job/${job._id}`} className="job-link btn btn-primary btn-sm mx-2">
+                    Edit
+                  </Link>
                   <button
                     className="btn btn-danger btn-sm"
                     onClick={() => deleteJob(job._id)}
